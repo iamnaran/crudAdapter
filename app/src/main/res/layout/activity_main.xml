@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.55"
+        android:orientation="vertical"
+        >
+
+
+        <EditText
+            android:id="@+id/inputName"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#aacce9"
+            android:hint=" Input Data "
+            android:maxLength="8"
+            android:padding="10dp"
+            android:singleLine="true"/>
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:text="Add Data"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            />
+
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="Update database"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            />
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="Delete Data"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            />
+        <Button
+            android:id="@+id/button_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="Clear database"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.45"
+        android:gravity="center"
+        >
+
+       <ListView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/listView"
+           android:choiceMode="singleChoice"
+           android:background="#b0dee6"
+           android:scrollbars="vertical"
+           >
+       </ListView>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
